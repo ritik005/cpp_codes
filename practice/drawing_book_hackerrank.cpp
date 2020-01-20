@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-{
+ {
     int n,p,c=0;
     cin >> n;
     cin >> p;
@@ -43,5 +43,6 @@ int main()
         }
     }
     return 0;
-}
+
+    
 
