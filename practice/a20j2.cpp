@@ -12,11 +12,6 @@ int main()
         s1[j]=s[i];
         j++;
     }
-    // for(int i=0;i<s1.length();i++)
-    // {
-    //     cout << s1[i];
-    // }
-    // return 0;
     int length=s1.length();
     stringstream geek(s1);
     int arr[length];
