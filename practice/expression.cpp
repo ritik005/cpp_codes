@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include<string>
 
 using namespace std;
 
@@ -49,17 +50,47 @@ int main()
     //  }
     //  return 0;
 
+// {
+//     int n,m,a,b,x,y;
+//     cin >> n >> m >> a >> b;
+//     x=n/m;
+//     y=n-(m*x);
+//     if(b>=((2*a)+1))
+//     {
+//         cout << (n*a);
+//     }
+//     else
+//     {
+//         if(y==0)
+//         {
+//             cout << (b*x);
+//         }
+//         else
+//         {
+//             cout << ((a*y)+(b*x));
+//         }
+//     }
+//     return 0;
 {
-    long long unsigned int n,k,x,y;
-    cin >> n >> k;
-    x=(n+1)/2;
-    if(k<=x)
+    string s,x,y,z,a;
+    getline(cin, s);
+    int l=s.length();
+    y=s;
+    z=s;
+    if(y[0]!='-')
     {
-        cout << ((2*k)-1);
+        cout << s;
     }
     else
     {
-        cout << (2*(k-x));
-    }
+        x=y.erase(l-2,1);
+        a=z.erase(l-1,1);
+        int n,m,b;
+        n=stoi(x);
+        m=stoi(a);
+        b=max(n,m);
+        cout << b;
+    } 
+    
     return 0;
 }
